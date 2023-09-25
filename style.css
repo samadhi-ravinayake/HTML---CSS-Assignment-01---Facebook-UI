@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(238, 244, 245);
+  background-color: rgb(237, 244, 245);
   margin-top: 7vh;
   display: flex;
   text-align: center;
@@ -7,19 +7,72 @@ body {
   font-family: sans-serif;
 }
 
+h1 {
+  color: rgb(46, 131, 201);
+  font-size: 45px;
+  height: 30px;
+}
+
 .loginbox {
-  background-color: rgb(255, 255, 255);
-  padding: 20px;
-  margin-top: 5%;
-  border-radius: 7px;
-  box-shadow: 0 0 10px;
   display: flex;
   flex-direction: column;
-  width: 350px;
+  width: 370px;
+  height: 270px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  margin-top: 5px;
+  border-radius: 7.5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  color: rgb(0, 0, 0);
+  margin-top: -1vh;
+  font-weight: 100;
+}
+
+::placeholder {
+  color: rgb(180, 178, 178);
+  font-size: 15px;
+  padding: 5px;
 }
 
 input {
-  margin-bottom: 10px;
   padding: 10px;
+  margin-bottom: 10px;
   border-radius: 5px;
+  border: 1px solid #ccc;
+}
+input:focus {
+  outline: none;
+}
+
+button {
+  background-color: rgb(46, 131, 201);
+  margin-top: 30px;
+  height: 45px;
+  border-radius: 6px;
+  border-color: rgb(46, 131, 201);
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  outline: none;
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: rgb(31, 143, 248);
+  transition: 0.5s;
+}
+
+a {
+  margin-top: 35px;
+  color: rgb(46, 131, 201);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
